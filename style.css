@@ -1,0 +1,35 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/secao-lancamentos.css");
+@import url("styles/secao-mais-vendidos.css");
+@import url("styles/secao-topicos.css");
+@import url("styles/secao-email.css");
+@import url("styles/footer.css");
+
+:root {
+	--cor-de-fundo-cinza: #EBECEE;
+	--cor-de-fundo-branco: #FFFFFF;
+	--cor-de-fundo-amarelo: #EB9B00;
+	--cor-titulo-branco: #FFFFFF;
+	--cor-titulo-amarelo: #EB9B00;
+	--cor-texto-azul: #002F52;
+	--fonte-principal: "Poppins";
+	--fonte-alura: "Josefin Sans";
+	--degrade-azul-um: #002F52;
+	--degrade-azul-dois: #326589;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--cor-de-fundo-cinza);
+	font-family: var(--fonte-principal);
+	font-size: 16px;
+	font-weight: 400px;
+}
+
+/*Mobile First*/

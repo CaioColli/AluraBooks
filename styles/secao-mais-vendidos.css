@@ -1,0 +1,119 @@
+.titulo-mais-vendidos {
+		background: var(--cor-de-fundo-branco);
+		padding: 25px 0;
+		text-align: center;
+		font-weight: 700;
+		font-size: 18px;
+		color: var(--cor-titulo-amarelo);
+		text-transform: uppercase;
+	}
+
+	.estrelinhas {
+		width: 100px;
+		padding: 5px 16px 5px 5px;
+	}
+
+	.descricao-autora-mes {
+		color: var(--cor-titulo-amarelo);
+		font-weight: 700;
+		padding: 5px 16px 10px 5px;
+	}
+
+	.descricao-nome-autora {
+		color: var(--cor-texto-azul);
+		font-weight: 700;
+		padding: 0 16px 10px 5px;
+	}
+
+	.descricao-autora {
+		font-size: 14px;
+		padding: 0 16px 5px 5px;
+	}
+
+	.imagem-escritora {
+		margin-bottom: 15px;
+		padding-left: 2px;
+	}
+
+/*Tablet*/
+
+@media screen and (min-width: 1024px) {
+
+	.titulo-mais-vendidos {
+		padding-top: 50px;
+		font-size: 26px;
+	}
+
+	.mais-vendidos {
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 80px;
+		margin-bottom: 50px;
+	}
+
+	.descricao-autora-mes {
+		margin-bottom: 5px;
+	}
+
+	.descricao-nome-autora {
+		margin-bottom: 5px;
+	}
+
+	.descricao-autora {
+		padding-left: 15px;
+	}
+}	
+
+/*Fim Tablet*/
+
+/*Desktop*/
+
+@media screen and (min-width: 1728px) {
+
+	.mais-vendidos {
+		height: 60vh;
+	}
+
+	.grid-carrossel {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	/*Carrossel Tablet*/
+
+	.swiper {
+		margin-left: 300px;
+		width: 65%;
+	}
+
+	/*Fim Carrossel Tablet*/
+
+	.card {
+		position: relative;
+		top: 15px;
+		margin-right: 300px;
+		width: 588px;
+	}
+
+	.estrelinhas {
+		width: 40%;
+	}
+
+	.descricao-autora-mes {
+		font-size: 24px;
+		padding: 10px 15px 0 15px;
+	}
+
+	.descricao-nome-autora {
+		font-size: 18px;
+		padding: 5px 15px 0 15px;
+	}
+
+	.descricao-autora {
+		padding: 20px 15px 0 15px;
+	}
+
+}
+
+/*Fim Desktop*/

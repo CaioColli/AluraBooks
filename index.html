@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html pt-br>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alura Books</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans:wght@100&family=Poppins:wght@300;400;500;700&family=Silkscreen&display=swap" rel="stylesheet">
+	<link
+	rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+	/>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&family=Noto+Sans:wght@100&family=Poppins:wght@300;400;500;700&family=Silkscreen&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+
+<body>
+
+	<!--Cabeçalho-->
+
+	<header class="cabecalho">
+	
+	<div class="container">
+
+		<!--Usei o Input "checkbox" ao invés do JavaScript para fazer a animação lateral do menu-->
+
+		<input type="checkbox" id="menu" class="container-botao">
+		<label for="menu">
+			<a class="cabecalho-menu"><img src="img/imagens-complementos/Menu.png"></a>
+		</label>
+
+			<!--Menu Lateral-->
+
+			<ul class="lista-menu">
+				
+				<li class="lista-menu-titulo">Categorias</li>
+				
+				<li class="lista-menu-item">
+					<a href="#" class="lista-menu-link">Programação</a>
+				</li>
+				
+				<li class="lista-menu-item">
+					<a href="#" class="lista-menu-link">Front-End</a>
+				</li>
+				
+				<li class="lista-menu-item">
+					<a href="#" class="lista-menu-link">Infraestrutura</a>
+				</li>
+				
+				<li class="lista-menu-item">
+					<a href="#" class="lista-menu-link">Business</a>
+				</li>
+				
+				<li class="lista-menu-item">
+					<a href="#" class="lista-menu-link">Design & UX</a>
+				</li>
+
+			</ul>
+			
+			<!--Fim Menu Lateral-->
+
+		<button href="#"><img src="img/imagens-complementos/Logo.png" class="container-imagem"></button>
+
+		
+		<!--Layout Tablet e Desktop-->
+
+		<h1 class="titulo-pagina"><b class="titulo-negrito">Alura</b>Books</h1>
+
+
+		<ul class="menu-cabecalho">
+
+		<input type="checkbox" id="menu-categorias" class="categorias-botao">
+		<label for="menu-categorias">
+			<li class="menu-cabecalho-texto">CATEGORIAS</li>
+		</label>
+
+		<!--Menu Inferior Tablet e Desktop-->
+
+			<ul class="lista-menu">
+					
+				<li class="lista-menu-item">
+					<a href="#" class="lista-menu-link">rogramação</a>
+				</li>
+					
+				<li class="lista-menu-item">
+					<a href="#" class="lista-menu-link">Front-End</a>
+				</li>
+					
+				<li class="lista-menu-item">
+					<a href="#" class="lista-menu-link">Infraestrutura</a>
+				</li>
+					
+				<li class="lista-menu-item">
+					<a href="#" class="lista-menu-link">Business</a>
+				</li>
+					
+				<li class="lista-menu-item">
+					<a href="#" class="lista-menu-link">Design & UX</a>
+				</li>
+
+			</ul>
+
+		<!--Fim Menu Inferior Tablet e Desktop-->	
+
+		<ul class="lista-menu-fav-estante">	
+
+			<li class="menu-cabecalho-texto"><a href="#">FAVORITOS</a></li>
+			<li class="menu-cabecalho-texto"><a href="#">MINHA ESTANTE</a></li>
+		
+		</ul>
+		
+		<!--Fim Layout Tablet e Desktop-->
+
+	</div>
+
+	<div class="container">
+		<button class="container-imagem / imagem-favoritos"><img src="img/imagens-complementos/Favoritos.png"></button>
+		<button class="container-imagem / imagem-compras"><img src="img/imagens-complementos/Compras.png"><h2 class="descricao-sacola-perfil">Minha sacola</h2></button>
+		<button class="container-imagem / imagem-usuario"><img src="img/imagens-complementos/Usuário.png"><h2 class="descricao-sacola-perfil">Meu perfil</h2></button>
+	</div>	
+
+	</header>
+
+	<!--Fim Cabeçalho-->
+
+	<!--Banner-->
+
+	<section class="banner"> <!--h1-->
+
+		<h1 class="titulo-principal">Já sabe por onde começar?</h1>		
+		<p class="conteudo-dois-banner">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+
+	<div class="container">
+		<input type="search" class="banner-pesquisa" placeholder="Qual será sua próxima leitura?">
+	</div>
+
+	</section>
+
+	<!--Fim Banner-->
+
+	<!--Seção Lançamentos--> <!--h3 , h2-->
+
+	<section class="ultimos-lancamentos">
+
+		<h2 class="titulo-lancamentos">Últimos lançamentos</h2>
+
+	<div class="grid-carrossel">	
+
+	<!--Script Carrossel-->
+
+	<!-- Slider main container -->
+	<div class="swiper">
+	<!-- Additional required wrapper -->
+	  
+	<!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-wrapper">
+	<!-- Slides -->
+    <div class="swiper-slide"><img src="img/livros-lançamentos/Acessibilidade.png"></div>
+    <div class="swiper-slide"><img src="img/livros-lançamentos/Gestão2.png"></div>
+    <div class="swiper-slide"><img src="img/livros-lançamentos/Guia Front-end.png"></div>
+    <div class="swiper-slide"><img src="img/livros-lançamentos/Javascript.png"></div>
+    <div class="swiper-slide"><img src="img/livros-lançamentos/Liderança.png"></div>
+	<div class="swiper-slide"><img src="img/livros-lançamentos/ReactNative.png"></div>
+	    ...
+	</div>
+	  
+	<!-- If we need navigation buttons -->
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div>
+
+	</div>
+
+	<!--Fim Script Carrossel-->
+
+	<!--Card Angular 11 e Firebase-->
+
+	<div class="card">
+		
+		<!--Primeira Linha-->
+
+		<div class="card-descricao">
+			
+			<!--Primeira Coluna-->
+
+			<div class="descricao">
+				<h3 class="descricao-titulo">Talvez você também se interesse por...</h3>
+				<h2 class="descricao-titulo-livro">Angular 11 e Firebase</h2>
+				<p class="descricao-texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+			</div>
+
+			<!--Fim Primeira Coluna-->
+			
+			</div>
+
+			<!--Segunda Coluna-->
+			
+			<div class="img-angular">
+
+			<img src="img/imagens-complementos/Angular.png" class="imagem-angular">	
+			
+			</div>
+
+			<!--Fim Segunda Coluna-->
+			
+			<!--Coluna dos Botões-->
+
+			<div class="card-botoes">
+
+				<button class="botao-favorito"><img src="img/imagens-complementos/Favoritos.png"></button>
+				<button class="botao-compras"><img src="img/imagens-complementos/Compras.png"></button>
+			
+			</div>
+
+			<!--Fim Coluna dos Botões-->
+
+			<!--Botão Saiba Mais-->
+			<div class="saiba-mais">	
+				<a href="#" class="botao-saiba-mais">Saiba mais</a>
+			</div>
+
+			<!--Fim Saiba Mais-->
+
+	</div>		
+
+	<!--Fim Card Angular 11 e Firebase-->
+
+	</section>
+
+	<!--Fim Seção Lançamentos-->
+
+	<!--Seção Mais Vendidos-->	<!--h3 , h2-->
+
+	<section class="mais-vendidos">
+
+		<h2 class="titulo-mais-vendidos">Mais vendidos</h2>
+
+	<div class="grid-carrossel">
+
+		<!-- Slider main container -->
+	<div class="swiper">
+	  <!-- Additional required wrapper -->
+	  
+	  <!-- If we need pagination -->
+	  <div class="swiper-pagination"></div>
+
+	  <div class="swiper-wrapper">
+	    <!-- Slides -->
+	    <div class="swiper-slide"><img src="img/livros-mais-vendidos/UX.png"></div>
+	    <div class="swiper-slide"><img src="img/livros-mais-vendidos/Tuning.png"></div>
+	    <div class="swiper-slide"><img src="img/livros-mais-vendidos/Portugol.png"></div>
+	    <div class="swiper-slide"><img src="img/livros-mais-vendidos/Gestão.png"></div>
+	    <div class="swiper-slide"><img src="img/livros-mais-vendidos/Arquitetura.png"></div>
+	    <div class="swiper-slide"><img src="img/livros-mais-vendidos/MetricasAgeis.png"></div>
+	    ...
+	  </div>
+	  
+	  <!-- If we need navigation buttons -->
+	  <div class="swiper-button-prev"></div>
+	  <div class="swiper-button-next"></div>
+
+	</div>
+
+	<div class="card">
+		
+		<!--Primeira Linha-->
+
+		<div class="card-descricao">
+			
+			<!--Primeira Coluna-->
+
+			<div class="descricao">
+				<img src="img/imagens-complementos/Estrelinhas.png" class="estrelinhas">
+				<h3 class="descricao-autora-mes">Autora do mês</h3>
+				<h2 class="descricao-nome-autora">Juliana Agarikov</h2>
+				<p class="descricao-autora">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+			</div>
+
+			<!--Fim Primeira Coluna-->
+			
+			</div>
+
+			<!--Segunda Coluna-->
+			
+			<div class="img-escritora">
+
+			<img src="img/imagens-perfil/Perfil-escritora.png" class="imagem-escritora">	
+			
+			</div>
+
+			<!--Fim Segunda Coluna-->
+			
+			<!--Coluna dos Botões-->
+
+			<div class="card-botoes">
+
+				<button class="botao-favorito"><img src="img/imagens-complementos/Favoritos.png"></button>
+				<button class="botao-compras"><img src="img/imagens-complementos/Compras.png"></button>
+			
+			</div>
+
+			<!--Fim Coluna dos Botões-->
+
+			<!--Botão Saiba Mais-->
+			<div class="saiba-mais">	
+				<a href="#" class="botao-saiba-mais">Saiba mais</a>
+			</div>
+
+	</div>		
+
+	</section>
+
+	<!--Fim Seção Mais Vendidos-->	
+
+	<!--Seção Tópicos--> <!--h4-->
+
+	<section class="topicos">
+
+		<h4 class="titulo-topicos">TÓPICOS VISITADOS RECENTEMENTE</h4>
+
+		<ul class="topicos-botao">
+			<li class="botao-topico"><a href="#">Android<a></li>
+			<li class="botao-topico"><a href="#">Marketing Digital</a></li>
+			<li class="botao-topico"><a href="#">Agile</a></li>
+			<li class="botao-topico"><a href="#">Startups</a></li>
+			<li class="botao-topico"><a href="#">HTML & CSS</a></li>
+			<li class="botao-topico"><a href="#">Python</a></li>
+			<li class="botao-topico"><a href="#">OO</a></li>
+			<li class="botao-topico"><a href="#">Java</a>	</li>
+		</ul>
+
+	</section>
+
+	<!--Fim Seção Tópicos-->
+
+	<!--Seção Email-->
+
+	<section class="secao-email">
+
+		<div class="texto-email">
+		<h5 class="titulo-email">Fique por dentro das novidades!</h5>
+		<p class="descricao-email">Atualizações de e-books, novos livros, promoções e outros.</p>
+		</div>
+
+		<div class="container-email">
+			<input type="email" class="email" placeholder="Cadastre seu e-mail">
+		</div>
+
+	</section>
+
+	<div class="linha-horizontal"></div>
+
+	<!--Fim Seção Email-->
+
+	<!--Rodapé-->
+
+	<footer class="rodape">
+
+		<h3 class="titulo-grupo-alura">Grupo Alura</h3>
+
+		<!--Grid Educação-->
+		<ul class="ul-footer">
+			<div class="linha-vertical"></div>
+			<li class="titulo-conteudo-footer">EDUCAÇÃO</li>
+			<li class="conteudo"><img src="img/imagens-footer/educacao/Caelum.png" class="img-conteudo">Caelum</li>
+			<li class="conteudo"><img src="img/imagens-footer/educacao/CasaDoCodigo.png" class="img-conteudo">Casa do Código</li>
+		</ul>
+		<!--Fim Grid Educação-->
+
+		<!--Grid Educação Online-->
+		<ul class="ul-footer">
+			<div class="linha-vertical"></div>
+			<li class="titulo-conteudo-footer">EDUCAÇÃO ONLINE</li>
+			<li class="conteudo"><img src="img/imagens-footer/educacao-online/Alura.png" class="img-conteudo">Alura</li>
+			<li class="conteudo"><img src="img/imagens-footer/educacao-online/AluraEmpresas.png" class="img-conteudo">Alura Para Empresas</li>
+			<li class="conteudo"><img src="img/imagens-footer/educacao-online/AluraLATAM.png" class="img-conteudo">Alura LATAM</li>
+			<li class="conteudo"><img src="img/imagens-footer/educacao-online/AluraStart.png" class="img-conteudo">Alura Start</li>
+			<li class="conteudo"><img src="img/imagens-footer/educacao-online/MusicDot.png" class="img-conteudo">MusicDot</li>
+			<li class="conteudo"><img src="img/imagens-footer/educacao-online/Aluralingua.png" class="img-conteudo">Alura Língua</li>
+			<li class="conteudo"><img src="img/imagens-footer/educacao-online/PM3.png" class="img-conteudo">PM3</li>
+		</ul>
+		<!--Fim Grid Educação Online-->
+
+		<!--Grid Educação Comunidade-->
+		<ul class="ul-footer">
+			<div class="linha-vertical"></div>
+			<li class="titulo-conteudo-footer"><img src="">COMUNIDADE</li>
+			<li class="conteudo"><img src="img/imagens-footer/comunidade/HipstersTech.png" class="img-conteudo">Hipsters ponto Tech</li>
+			<li class="conteudo"><img src="img/imagens-footer/comunidade/ScubaDev.png" class="img-conteudo">Scuba Dev</li>
+			<li class="conteudo"><img src="img/imagens-footer/comunidade/LayersTech.png" class="img-conteudo">Layers ponto Tech</li>
+			<li class="conteudo"><img src="img/imagens-footer/comunidade/LikeABoss.png" class="img-conteudo">Like a Boss</li>
+			<li class="conteudo"><img src="img/imagens-footer/comunidade/CarreiraSemFronteira.png" class="img-conteudo">Carreira sem Fronteira</li>
+			<li class="conteudo"><img src="img/imagens-footer/comunidade/HipstersJobs.png" class="img-conteudo">Hipsters ponto Jobs</li>
+			<li class="conteudo"><img src="img/imagens-footer/comunidade/GUJ.png" class="img-conteudo">GUJ</li>
+		</ul>
+		<!--Fim Grid Educação Comunidade-->
+	</footer>	
+
+	<!--Fim Rodapé-->
+
+<!--Script Animação Carrossel-->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script> 
+const swiper = new Swiper('.swiper', {
+  spaceBetween: 10,
+  slidesPerView: 3,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+</script>
+
+<!--Fim Script Animação Carrossel-->
+
+</body>
+
+</html>

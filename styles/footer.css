@@ -1,0 +1,73 @@
+:root {
+	--cor-de-fundo-cinza: #EBECEE;
+	--cor-de-fundo-branco: #FFFFFF;
+	--cor-de-fundo-amarelo: #EB9B00;
+	--cor-titulo-branco: #FFFFFF;
+	--cor-titulo-amarelo: #EB9B00;
+	--cor-texto-cinza-footer: #474646;
+	--cor-texto-azul: #002F52;
+	--fonte-principal: "Poppins";
+	--fonte-alura: "Josefin Sans";
+	--degrade-azul-um: #002F52;
+	--degrade-azul-dois: #326589;
+
+}
+
+	footer {
+		display: none;
+	}
+
+/*Tablet*/
+
+@media screen and (min-width: 1024px) {
+
+	.rodape {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		height: 50vh;
+	}
+
+	.titulo-grupo-alura {
+		text-align: center;
+		font-size: 24px;
+	}
+
+
+	.titulo-conteudo-footer {
+		font-size: 14px;
+		color: var(--cor-texto-cinza-footer);
+		margin-bottom: 15px;
+	}
+
+	.conteudo {
+		font-size: 14px;
+		color: var(--cor-texto-cinza-footer);
+		padding-bottom: 15px;
+	}
+
+	.img-conteudo {
+		position: relative;
+		top: 9px;
+		right: 9px;
+		width: 30px;
+	}
+}
+
+
+/*Fim Tablet*/
+
+
+/*Desktop*/
+
+@media screen and (min-width: 1728px) {
+
+	.linha-vertical {
+		float: left;
+		position: relative;
+		right: 25px;
+		height: 90%;
+		border-left: 1px solid var(--cor-texto-cinza-footer);
+	}
+}
+
+/*Fim Desktop*/

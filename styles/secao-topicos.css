@@ -1,0 +1,105 @@
+:root {
+	--cor-de-fundo-cinza: #EBECEE;
+	--cor-de-fundo-branco: #FFFFFF;
+	--cor-de-fundo-amarelo: #EB9B00;
+	--cor-titulo-branco: #FFFFFF;
+	--cor-titulo-amarelo: #EB9B00;
+	--cor-texto-cinza-footer: #474646;
+	--cor-texto-azul: #002F52;
+	--fonte-principal: "Poppins";
+	--fonte-alura: "Josefin Sans";
+	--degrade-azul-um: #002F52;
+	--degrade-azul-dois: #326589;
+}
+
+.secao-email {
+	height: 20vh;
+}
+
+.topicos {
+		height: 300px;
+		background-image: linear-gradient( 90deg , var(--degrade-azul-um), var(--degrade-azul-dois));
+	}
+
+	.titulo-topicos {
+		font-weight: 300;
+		text-align: center;
+		color: var(--cor-titulo-branco);
+		padding: 32px 0 16px 0;
+	}
+
+	.topicos-botao {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+
+	.botao-topico {
+		border: 1px solid var(--cor-de-fundo-amarelo);
+		border-radius: 2px;
+		background-color: var(--cor-de-fundo-amarelo);
+		color: var(--cor-de-fundo-branco);
+		font-weight: 700;
+		padding: 16px 24px;
+		margin: 10px 5px 10px 5px;
+	}
+
+/*Tablet*/
+
+@media screen and (min-width: 1024px) {
+
+	.secao-email {
+		margin-top: 50px;
+	}
+
+	.titulo-topicos {
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+
+	.topicos-botao {
+		padding: 0 230px;
+	}
+
+	.botao-topico {
+		padding: 20px 24px;
+	}
+
+	/*Linha Abaixo da Seção Email*/
+	.linha-horizontal {
+		width: 1024px;
+		border-bottom: 1px solid var(--cor-texto-cinza-footer);
+		margin-bottom: 20px;
+	}
+	/*Fim Linha Abaixo da Seção Email*/
+
+}	
+
+
+/*Tablet*/
+
+
+/*Desktop*/
+
+@media screen and (min-width: 1728px) {
+
+	.topicos {
+		height: 44vh;
+	}
+
+	.titulo-topicos {
+		padding: 50px 0 30px 0;
+		font-size: 32px;
+	}
+
+	.topicos-botao {
+		margin: 0 350px 0 350px;
+	}
+
+	.botao-topico {
+		font-size: 24px;
+	}
+
+}
+
+/*Desktop*/
